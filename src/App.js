@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from './styles';
 import './App.css';
+import Attribution from './components/Attribution';
+import ProductCard from './components/ProductCard';
+
+const theme = {
+  darkCyan: "hsl(158, 36%, 37%)",
+  cream: "hsl(30, 38%, 92%)",
+  veryDarkBlue: "hsl(212, 21%, 14%)",
+  darkGrayishBlue: "hsl(228, 12%, 48%)",
+  white: "hsl(0, 0%, 100%)"
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={ theme }>
+        <GlobalStyle />
+        <ProductCard />
+        <Attribution />
+      </ThemeProvider>
     </div>
   );
 }
