@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Text = styled.h6`
+export const Text = styled.h4`
   font-size: 11px;
   text-align: center;
   color: ${(props) => props.theme.darkGrayishBlue};

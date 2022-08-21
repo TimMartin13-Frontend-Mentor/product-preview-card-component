@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.main`
   @media screen and (min-width: 600px) {
     display: flex;
     width: 100vw;
@@ -33,9 +33,10 @@ export const DesktopImage = styled.img`
   display: none;
 
   @media screen and (min-width: 600px) {
-    display: inline;
+    display: inline-block;
     border-radius: 0.6rem 0 0 0.6rem;
-    width: 50%;
+    width: 300px;
+    flex-basis: 10;
   }
 `;
 
