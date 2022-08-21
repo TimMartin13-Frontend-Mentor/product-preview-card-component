@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Text = styled.h6`
-  font-size: 11px; 
-  text-align: center; 
-  color: ${props => props.theme.white};
-`
+  font-size: 11px;
+  text-align: center;
+  color: ${(props) => props.theme.darkGrayishBlue};
+`;
 
-export const Link = styled.a` 
-  color: ${props => props.theme.blue};
-`
+export const Link = styled.a`
+  color: ${(props) => props.theme.blue};
+`;

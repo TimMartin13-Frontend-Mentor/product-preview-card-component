@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 body {
@@ -9,6 +9,6 @@ body {
   text-rendering: optimizeLegibility;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  background-color: ${props => props.theme.cream};
+  background-color: ${(props) => props.theme.cream};
 }
-`
+`;
